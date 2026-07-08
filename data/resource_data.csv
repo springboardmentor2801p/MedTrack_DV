@@ -1,0 +1,41 @@
+Resource_ID,Department_ID,Department_Name,Resource_Name,Resource_Category,Total_Units,Available_Units,In_Use_Units,Maintenance_Units,Utilization_Rate,Resource_Status
+R001,D001,Obstetrics & Gynecology,Delivery Rooms,Room,29,11,16,2,55.17,Active
+R002,D001,Obstetrics & Gynecology,Fetal Monitors,Equipment,26,8,16,2,61.54,Active
+R003,D001,Obstetrics & Gynecology,Ultrasound Machines,Equipment,18,7,10,1,55.56,Active
+R004,D001,Obstetrics & Gynecology,Labor Beds,Bed,22,9,11,2,50.0,Active
+R005,D002,Pediatrics & Neonatal Care,Incubators,Equipment,10,4,6,0,60.0,Active
+R006,D002,Pediatrics & Neonatal Care,NICU Beds,Bed,25,9,14,2,56.0,Active
+R007,D002,Pediatrics & Neonatal Care,Infant Warmers,Equipment,29,9,20,0,68.97,Active
+R008,D002,Pediatrics & Neonatal Care,Pediatric Ventilators,Equipment,27,3,22,2,81.48,Active
+R009,D003,Cardiology,ECG Machines,Equipment,8,0,7,1,87.5,Active
+R010,D003,Cardiology,ICU Beds,Bed,18,1,16,1,88.89,Active
+R011,D003,Cardiology,Cardiac Monitors,Equipment,17,3,13,1,76.47,Active
+R012,D003,Cardiology,Catheterization Lab,Room,26,4,20,2,76.92,Active
+R013,D004,Gastroenterology,Endoscopy Units,Equipment,28,5,21,2,75.0,Active
+R014,D004,Gastroenterology,Procedure Rooms,Room,21,8,11,2,52.38,Active
+R015,D004,Gastroenterology,Patient Beds,Bed,10,2,8,0,80.0,Active
+R016,D004,Gastroenterology,Ultrasound Machines,Equipment,17,1,14,2,82.35,Active
+R017,D005,Neurology,EEG Machines,Equipment,29,3,24,2,82.76,Active
+R018,D005,Neurology,MRI Access,Equipment,21,7,13,1,61.9,Active
+R019,D005,Neurology,Neurology Beds,Bed,15,2,11,2,73.33,Active
+R020,D005,Neurology,ICU Monitors,Equipment,10,2,6,2,60.0,Active
+R021,D006,Pulmonology,Ventilators,Equipment,23,2,19,2,82.61,Active
+R022,D006,Pulmonology,Respiratory Monitors,Equipment,15,0,13,2,86.67,Active
+R023,D006,Pulmonology,Oxygen Beds,Bed,23,9,13,1,56.52,Active
+R024,D006,Pulmonology,Pulmonary Function Lab,Room,24,9,13,2,54.17,Active
+R025,D007,Orthopedics,Operation Theatres,Room,17,3,14,0,82.35,Active
+R026,D007,Orthopedics,X-Ray Machines,Equipment,14,1,12,1,85.71,Active
+R027,D007,Orthopedics,Orthopedic Beds,Bed,21,6,14,1,66.67,Active
+R028,D007,Orthopedics,Wheelchairs,Equipment,8,1,6,1,75.0,Active
+R029,D008,Nephrology & Urology,Dialysis Machines,Equipment,10,0,9,1,90.0,Active
+R030,D008,Nephrology & Urology,Dialysis Beds,Bed,9,2,5,2,55.56,Active
+R031,D008,Nephrology & Urology,Ultrasound Machines,Equipment,14,4,8,2,57.14,Active
+R032,D008,Nephrology & Urology,Procedure Rooms,Room,26,1,24,1,92.31,Active
+R033,D009,Infectious Disease,Isolation Rooms,Room,12,1,11,0,91.67,Active
+R034,D009,Infectious Disease,Negative Pressure Beds,Bed,26,6,20,0,76.92,Active
+R035,D009,Infectious Disease,PPE Kits,Equipment,17,4,13,0,76.47,Active
+R036,D009,Infectious Disease,Disinfection Units,Equipment,8,2,5,1,62.5,Active
+R037,D010,Endocrinology,Consultation Rooms,Room,16,1,14,1,87.5,Active
+R038,D010,Endocrinology,Glucose Analyzers,Equipment,30,1,29,0,96.67,Active
+R039,D010,Endocrinology,Patient Beds,Bed,18,2,14,2,77.78,Active
+R040,D010,Endocrinology,Diagnostic Equipment,Equipment,15,4,9,2,60.0,Active
