@@ -3,21 +3,17 @@ import pandas as pd
 import numpy as np
 
 
-# =====================================================
-# PATHS
-# =====================================================
+# Project paths
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 RAW_PATH = os.path.join(BASE_DIR, "data", "raw")
-PROCESSED_PATH = os.path.join(BASE_DIR, "data", "processed")
+OUTPUT_PATH = os.path.join(BASE_DIR, "data", "processed")
 
-os.makedirs(PROCESSED_PATH, exist_ok=True)
+os.makedirs(OUTPUT_PATH, exist_ok=True)
 
 
-# =====================================================
-# LOAD CSV FILES
-# =====================================================
+# Load datasets
 
 admissions = pd.read_csv(
     os.path.join(RAW_PATH, "admissions.csv")
@@ -56,34 +52,25 @@ insurance_provider = pd.read_csv(
 )
 
 
-print("ALL FILES LOADED")
+print("All datasets loaded successfully")
 
 
-# =====================================================
-# CLEAN INSURANCE DATA
-# ONE POLICY PER PATIENT
-# =====================================================
+# Remove duplicate insurance records
 
 patient_insurance = (
     patient_insurance
     .sort_values("patient_insurance_id")
     .drop_duplicates(
-        subset=["patient_id"],
+        subset="patient_id",
         keep="last"
     )
 )
 
 
-# =====================================================
-# START WITH ADMISSIONS
-# =====================================================
+# Merge datasets
 
 df = admissions.copy()
 
-
-# =====================================================
-# MERGE TABLES
-# =====================================================
 
 df = df.merge(
     patient,
@@ -134,33 +121,29 @@ df = df.merge(
 )
 
 
-df = df.merge(
-    insurance_provider,
-    on="insurance_provider_id",
-    how="left"
-)
+if "insurance_provider_id" in df.columns:
+
+    df = df.merge(
+        insurance_provider,
+        on="insurance_provider_id",
+        how="left"
+    )
 
 
-# =====================================================
-# REMOVE DUPLICATE COLUMNS
-# =====================================================
+# Remove duplicate column names
 
 df = df.loc[:, ~df.columns.duplicated()]
 
 
-# =====================================================
-# DATE CONVERSION
-# =====================================================
+# Convert dates
 
 date_columns = [
-
     "admission_date",
     "discharge_date",
     "date_of_birth",
     "bill_date",
     "policy_start_date",
     "policy_end_date"
-
 ]
 
 
@@ -174,19 +157,15 @@ for col in date_columns:
         )
 
 
-# =====================================================
-# HANDLE MISSING INSURANCE DATA
-# =====================================================
+# Insurance handling
 
 insurance_defaults = {
 
-    "patient_insurance_id": 0,
     "policy_number": "NO_INSURANCE",
-    "coverage_percentage": 0,
-    "insurance_provider_id": 0,
     "provider_name": "Self Pay",
     "provider_type": "None",
     "contact_details": "N/A",
+    "coverage_percentage": 0,
     "coverage_limit": 0
 
 }
@@ -199,58 +178,46 @@ for col, value in insurance_defaults.items():
         df[col] = df[col].fillna(value)
 
 
-df["policy_start_date"] = (
-    df["policy_start_date"]
-    .fillna(pd.Timestamp("1900-01-01"))
-)
+
+# Length of stay
+
+if (
+    "admission_date" in df.columns
+    and "discharge_date" in df.columns
+):
+
+    df["length_of_stay"] = (
+
+        df["discharge_date"]
+        -
+        df["admission_date"]
+
+    ).dt.days
 
 
-df["policy_end_date"] = (
-    df["policy_end_date"]
-    .fillna(pd.Timestamp("1900-01-01"))
-)
-# =====================================================
-# ANALYTICS COLUMNS
-# =====================================================
-
-
-# =====================================================
-# 1. LENGTH OF STAY
-# =====================================================
-
-df["length_of_stay"] = (
-
-    df["discharge_date"]
-    -
-    df["admission_date"]
-
-).dt.days
-
-
-df["length_of_stay"] = (
-    df["length_of_stay"]
-    .clip(lower=0)
-)
+    df["length_of_stay"] = (
+        df["length_of_stay"]
+        .clip(lower=0)
+    )
 
 
 
-# =====================================================
-# 2. PATIENT AGE
-# =====================================================
+# Patient age
 
-df["patient_age"] = (
+if (
+    "date_of_birth" in df.columns
+    and "admission_date" in df.columns
+):
 
-    df["admission_date"].dt.year
-    -
-    df["date_of_birth"].dt.year
+    df["patient_age"] = (
 
-)
+        df["admission_date"].dt.year
+        -
+        df["date_of_birth"].dt.year
+
+    )
 
 
-
-# =====================================================
-# 3. AGE GROUP
-# =====================================================
 
 def age_group(age):
 
@@ -267,32 +234,33 @@ def age_group(age):
         return "Senior"
 
 
-df["age_group"] = (
-    df["patient_age"]
-    .apply(age_group)
-)
+
+if "patient_age" in df.columns:
+
+    df["age_group"] = (
+        df["patient_age"]
+        .apply(age_group)
+    )
 
 
 
-# =====================================================
-# 4. INSURANCE STATUS
-# =====================================================
+# Insurance status
 
-df["insurance_status"] = np.where(
+if "policy_number" in df.columns:
 
-    df["policy_number"] == "NO_INSURANCE",
+    df["insurance_status"] = np.where(
 
-    "Self Pay",
+        df["policy_number"] == "NO_INSURANCE",
 
-    "Insured"
+        "Self Pay",
 
-)
+        "Insured"
+
+    )
 
 
 
-# =====================================================
-# 5. REVENUE CATEGORY
-# =====================================================
+# Revenue category
 
 def revenue_category(amount):
 
@@ -307,191 +275,127 @@ def revenue_category(amount):
 
 
 
-df["revenue_category"] = (
+if "total_amount" in df.columns:
 
-    df["total_amount"]
-    .fillna(0)
-    .apply(revenue_category)
+    df["revenue_category"] = (
 
-)
+        df["total_amount"]
+        .fillna(0)
+        .apply(revenue_category)
 
-
-
-# =====================================================
-# 6. ADMISSION YEAR
-# =====================================================
-
-df["admission_year"] = (
-
-    df["admission_date"]
-    .dt.year
-
-)
+    )
 
 
 
-# =====================================================
-# 7. ADMISSION MONTH
-# =====================================================
+# Time features
 
-df["admission_month"] = (
+if "admission_date" in df.columns:
 
-    df["admission_date"]
-    .dt.month_name()
+    df["admission_year"] = (
+        df["admission_date"].dt.year
+    )
 
-)
+    df["admission_month"] = (
+        df["admission_date"].dt.month_name()
+    )
 
+    df["admission_month_number"] = (
+        df["admission_date"].dt.month
+    )
 
+    df["admission_year_month"] = (
+        df["admission_date"]
+        .dt.to_period("M")
+        .astype(str)
+    )
 
-# =====================================================
-# 8. ADMISSION MONTH NUMBER
-# (TABLEAU SORTING)
-# =====================================================
+    df["admission_quarter"] = (
 
-df["admission_month_number"] = (
+        "Q"
+        +
+        df["admission_date"]
+        .dt.quarter
+        .astype(str)
 
-    df["admission_date"]
-    .dt.month
-
-)
-
-
-
-# =====================================================
-# 9. YEAR MONTH
-# =====================================================
-
-df["admission_year_month"] = (
-
-    df["admission_date"]
-    .dt.to_period("M")
-    .astype(str)
-
-)
+    )
 
 
 
-# =====================================================
-# 10. ADMISSION QUARTER
-# =====================================================
+# Emergency flag
 
-df["admission_quarter"] = (
+if "admission_type" in df.columns:
 
-    "Q"
-    +
-    df["admission_date"]
-    .dt.quarter
-    .astype(str)
+    df["emergency_flag"] = np.where(
 
-)
+        df["admission_type"]
+        .str.lower()
+        .str.contains(
+            "emergency",
+            na=False
+        ),
 
+        1,
 
+        0
 
-# =====================================================
-# 11. EMERGENCY FLAG
-# =====================================================
-
-df["emergency_flag"] = np.where(
-
-    df["admission_type"]
-    .str.lower()
-    .str.contains(
-        "emergency",
-        na=False
-    ),
-
-    1,
-
-    0
-
-)
+    )
 
 
 
-# =====================================================
-# 12. STAY CATEGORY
-# =====================================================
+# Stay category
 
 def stay_category(days):
 
     if days <= 3:
-
         return "Short Stay"
 
     elif days <= 7:
-
         return "Medium Stay"
 
     else:
-
         return "Long Stay"
 
 
 
-df["stay_category"] = (
+if "length_of_stay" in df.columns:
 
-    df["length_of_stay"]
-    .apply(stay_category)
+    df["stay_category"] = (
 
-)
+        df["length_of_stay"]
+        .apply(stay_category)
 
-
-
-# =====================================================
-# 13. DEPARTMENT REVENUE
-# =====================================================
-
-df["department_revenue"] = (
-
-    df["total_amount"]
-    .fillna(0)
-
-)
+    )
 
 
 
-# =====================================================
-# 14. DISEASE LOAD
-# =====================================================
+# Department revenue
 
-disease_count = (
+if "total_amount" in df.columns:
 
-    df["disease_name"]
-    .value_counts()
-
-)
-
-
-df["disease_load"] = (
-
-    df["disease_name"]
-    .map(disease_count)
-
-)
+    df["department_revenue"] = (
+        df["total_amount"]
+        .fillna(0)
+    )
 
 
 
-df["disease_load_category"] = pd.cut(
+# Disease load
 
-    df["disease_load"],
+if "disease_name" in df.columns:
 
-    bins=3,
+    disease_count = (
+        df["disease_name"]
+        .value_counts()
+    )
 
-    labels=[
-
-        "Low Load",
-        "Medium Load",
-        "High Load"
-
-    ]
-
-)
+    df["disease_load"] = (
+        df["disease_name"]
+        .map(disease_count)
+    )
 
 
 
-# =====================================================
-# 15. BED OCCUPANCY FLAG
-# =====================================================
+# Bed occupancy
 
 df["bed_occupancy_flag"] = np.where(
 
@@ -502,43 +406,44 @@ df["bed_occupancy_flag"] = np.where(
     0
 
 )
-# =====================================================
-# SORT CHRONOLOGICALLY
-# =====================================================
-df = (
-    df.sort_values(
-        by=["admission_date", "bill_date"],
-        ascending=[True, True]
+
+
+
+# Sort data
+
+if "admission_date" in df.columns:
+
+    df = (
+        df.sort_values(
+            "admission_date"
+        )
+        .reset_index(drop=True)
     )
-    .reset_index(drop=True)
-)
 
 
-# =====================================================
-# DUPLICATE CHECK
-# =====================================================
+
+# Validation
 
 print("\nDuplicate Admission IDs:")
 
-duplicate_count = (
-
+print(
     df["admission_id"]
     .duplicated()
     .sum()
-
 )
 
-print(duplicate_count)
+
+print("\nRows:", df.shape[0])
+
+print("Columns:", df.shape[1])
 
 
 
-# =====================================================
-# SAVE FINAL DATASET
-# =====================================================
+# Save output
 
 output_file = os.path.join(
 
-    PROCESSED_PATH,
+    OUTPUT_PATH,
 
     "hospital_raw_data.csv"
 
@@ -554,61 +459,6 @@ df.to_csv(
 )
 
 
-
-# =====================================================
-# DATASET REPORT
-# =====================================================
-
-total_cells = df.shape[0] * df.shape[1]
-
-missing_cells = df.isnull().sum().sum()
-
-
-completeness = (
-
-    (total_cells - missing_cells)
-    /
-    total_cells
-
-) * 100
-
-
-
 print("\nSUCCESS")
 
-print("Rows :", len(df))
-
-print("Columns :", len(df.columns))
-
-print("Saved to :", output_file)
-
-print(
-    f"Dataset Completeness: {completeness:.2f}%"
-)
-
-
-
-# =====================================================
-# FINAL CHECK
-# =====================================================
-
-print("\nFirst 10 Admission IDs:")
-
-print(
-
-    df["admission_id"]
-    .head(10)
-    .to_list()
-
-)
-
-
-print("\nLast 10 Admission IDs:")
-
-print(
-
-    df["admission_id"]
-    .tail(10)
-    .to_list()
-
-)
+print("Saved:", output_file)
