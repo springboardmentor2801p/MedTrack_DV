@@ -1,5 +1,6 @@
 import pandas as pd
 
+# Load Dataset
 df = pd.read_excel("hospital_final_dataset.xlsx")
 
 print("\n===== HOSPITAL KPI REPORT =====\n")
@@ -24,23 +25,38 @@ total_beds = df["Bed_Capacity"].sum()
 
 bed_utilization_rate = round((beds_used / total_beds) * 100, 2)
 
-# KPI 6 - Department Efficiency
+# KPI 6 - Department Efficiency Score
+dept_avg = df.groupby("Department")["Length_of_stay"].mean()
+
 dept_efficiency = (
-    df.groupby("Department")["Length_of_stay"]
-    .mean()
-    .sort_values()
-)
+    (dept_avg.max() - dept_avg)
+    / (dept_avg.max() - dept_avg.min())
+    * 40 + 60
+).round(2)
 
+dept_efficiency = dept_efficiency.sort_values(ascending=False)
+
+# Display KPI Results
 print("Total Admissions:", total_admissions)
-print("Average Length of Stay:", avg_los, "Days")
-print("Readmission Rate:", readmission_rate, "%")
-print("Occupancy Rate:", occupancy_rate, "%")
-print("Bed Utilization Rate:", bed_utilization_rate, "%")
 
-print("\n===== Department Efficiency =====\n")
+print("Average Length of Stay:",
+      avg_los, "Days")
+
+print("Readmission Rate:",
+      readmission_rate, "%")
+
+print("Occupancy Rate:",
+      occupancy_rate, "%")
+
+print("Bed Utilization Rate:",
+      bed_utilization_rate, "%")
+
+print("\n===== Department Efficiency Score =====\n")
 print(dept_efficiency)
 
 print("\nKPI Engineering Completed Successfully")
+
+# Save KPI Report
 kpi_report = pd.DataFrame({
     "KPI": [
         "Total Admissions",
@@ -52,9 +68,9 @@ kpi_report = pd.DataFrame({
     "Value": [
         total_admissions,
         avg_los,
-        readmission_rate,
-        occupancy_rate,
-        bed_utilization_rate
+        str(readmission_rate) + "%",
+        str(occupancy_rate) + "%",
+        str(bed_utilization_rate) + "%"
     ]
 })
 
