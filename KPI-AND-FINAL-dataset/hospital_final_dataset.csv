@@ -1,0 +1,5 @@
+service,total_admissions,occupancy_rate,bed_utilization_rate,average_length_of_stay,readmission_rate,department_efficiency_score
+Emergency,263,,,7.159695817490494,21.67,
+General_Medicine,242,,,6.9958677685950414,16.12,
+Icu,241,,,7.605809128630705,19.5,
+Surgery,254,,,7.866141732283465,20.08,
