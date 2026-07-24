@@ -1,3 +1,12 @@
+## Dashboard Preview
+
+### Hospital Overview
+
+![Hospital Overview](Hospital%20Overview%20Dashboard.png)
+
+### Patient Flow
+
+![Patient Flow](Patient%20Flow%20Dashboard.png)
 # 🏥 MedTrack_DV – Hospital Analytics Dashboard
 
 ![Tableau](https://img.shields.io/badge/Tableau-Data%20Visualization-blue)
