@@ -1,243 +1,357 @@
-# 🏥 MedTrack_DV — Healthcare Data Analytics & Visualization
+# 🏥 MedTrack_DV
+### Hospital Operations Analytics & Dashboard Project
+
+<p align="center">
+  <b>Turning Healthcare Data into Actionable Operational Insights</b>
+</p>
+
+<p align="center">
+  An end-to-end healthcare data analytics project covering data collection,
+  data cleaning, KPI engineering, dashboard planning, and visualization.
+</p>
+
+---
 
 ## 📌 Project Overview
 
-MedTrack_DV is a healthcare data analytics and visualization project designed to transform hospital data into meaningful healthcare operational insights.
+**MedTrack_DV** is a healthcare operations analytics project designed to transform raw hospital data into structured, analysis-ready datasets, meaningful KPIs, and interactive dashboards.
 
-The project covers the complete data workflow:
+The project follows an end-to-end analytics workflow:
 
-- Data Collection
-- Data Cleaning
-- KPI Generation
-- Data Analysis
-- Dashboard Development
-- Dashboard Testing
-- Documentation
-- Project Delivery
+**Data Collection → Data Cleaning → KPI Engineering → Dashboard Planning → Visualization → Insights**
 
-The final output is a portfolio-ready healthcare analytics project containing datasets, Python scripts, KPI outputs, documentation, and dashboard components.
+The final project presents **four analytical dashboards** focused on different areas of hospital operations:
 
-## 🎯 Project Objectives
+- 🏥 Hospital Overview
+- 🏢 Department Analytics
+- 👥 Patient Flow
+- 🛠️ Resource Utilization
 
-The main objectives of this project are:
+---
 
-- Collect and organize hospital-related datasets.
-- Clean and prepare healthcare data for analysis.
-- Generate meaningful healthcare KPIs.
-- Develop interactive dashboards for healthcare operations.
-- Validate healthcare metrics.
-- Validate patient flow analytics.
-- Test dashboard interactions.
-- Document the complete project workflow.
-- Deliver a portfolio-ready analytics project.
+# 📊 Dashboard Showcase
 
-## 🛠️ Tech Stack
+## 🏥 1. Hospital Overview Dashboard
 
-| Area | Tools / Libraries |
+A high-level view of hospital operations designed to provide an overall understanding of hospital performance and key operational indicators.
+
+<p align="center">
+  <img src="dashboard/Dashboard%20Screenshots/Hospital%20Overview%20Dashboard.png" 
+       alt="Hospital Overview Dashboard" 
+       width="95%">
+</p>
+
+---
+
+## 🏢 2. Department Analytics Dashboard
+
+A department-focused dashboard designed to analyze and compare operational performance across hospital departments.
+
+<p align="center">
+  <img src="dashboard/Dashboard%20Screenshots/Department%20Analytics%20Dashboard.png" 
+       alt="Department Analytics Dashboard" 
+       width="95%">
+</p>
+
+---
+
+## 👥 3. Patient Flow Dashboard
+
+A dashboard focused on understanding patient movement and flow throughout hospital operations.
+
+<p align="center">
+  <img src="dashboard/Dashboard%20Screenshots/Patient%20Flow%20Dashboard.png" 
+       alt="Patient Flow Dashboard" 
+       width="95%">
+</p>
+
+---
+
+## 🛠️ 4. Resource Utilization Dashboard
+
+A dashboard designed to provide visibility into hospital resource utilization and operational usage.
+
+<p align="center">
+  <img src="dashboard/Dashboard%20Screenshots/Resource%20Utilization%20Dashboard.png" 
+       alt="Resource Utilization Dashboard" 
+       width="95%">
+</p>
+
+---
+
+# 🎯 Project Objectives
+
+The major objectives of MedTrack_DV are:
+
+- Collect and organize healthcare operational data
+- Prepare raw datasets for analysis
+- Clean and structure healthcare data
+- Generate meaningful hospital KPIs
+- Analyze hospital operational performance
+- Study departmental performance
+- Understand patient flow
+- Analyze resource utilization
+- Plan and prototype analytical dashboards
+- Present information through effective data visualization
+
+---
+
+# 🔄 Project Workflow
+
+```text
+┌───────────────────────────┐
+│     DATA COLLECTION       │
+└─────────────┬─────────────┘
+              ↓
+┌───────────────────────────┐
+│      DATA CLEANING        │
+└─────────────┬─────────────┘
+              ↓
+┌───────────────────────────┐
+│     KPI ENGINEERING       │
+└─────────────┬─────────────┘
+              ↓
+┌───────────────────────────┐
+│ DASHBOARD PLANNING &      │
+│       PROTOTYPING         │
+└─────────────┬─────────────┘
+              ↓
+┌───────────────────────────┐
+│   DATA VISUALIZATION      │
+└─────────────┬─────────────┘
+              ↓
+┌───────────────────────────┐
+│   OPERATIONAL INSIGHTS    │
+└───────────────────────────┘
+```
+
+---
+
+# 📊 Analytical Areas
+
+| Dashboard | Focus Area |
 |---|---|
-| Data Collection | Python, Hospital Dataset, Patient Admission Dataset |
-| Data Processing | Pandas, NumPy |
-| Data Cleaning | Python |
-| Visualization | Tableau Desktop, Tableau Public |
-| Dashboard Integration | Tableau Filters, Parameters, Actions |
-| Documentation | Markdown, GitHub |
+| 🏥 Hospital Overview | Overall hospital operations |
+| 🏢 Department Analytics | Department-level performance |
+| 👥 Patient Flow | Patient movement and operational flow |
+| 🛠️ Resource Utilization | Hospital resource usage |
 
-## 🔄 Project Workflow
+---
 
-Raw Healthcare Data
-↓
-Data Collection
-↓
-Data Cleaning
-↓
-Data Processing
-↓
-KPI Generation
-↓
-Healthcare Analysis
-↓
-Dashboard Development
-↓
-Dashboard Testing
-↓
-Documentation
-↓
-Project Delivery
+# 🧹 Data Preparation
 
-## 📊 Key Project Metrics
+The project includes structured stages for preparing healthcare operational data.
 
-The project evaluation targets include:
+### 1️⃣ Data Collection
 
-- Dataset completeness above 95%.
-- 6+ KPIs generated.
-- 4 dashboards integrated.
-- KPI accuracy above 95%.
-- No major dashboard issues.
-- Portfolio-ready dashboard suite.
+Healthcare data is collected and organized into structured datasets for further processing and analysis.
 
-## 📁 Project Structure
+### 2️⃣ Data Cleaning
 
+Raw healthcare data is processed and cleaned to prepare analysis-ready datasets.
+
+### 3️⃣ KPI Engineering
+
+Relevant hospital operational KPIs are generated from the prepared data to support dashboard development and analysis.
+
+### 4️⃣ Dashboard Development
+
+The engineered KPIs and prepared datasets are used to design and develop dashboards for different operational areas.
+
+---
+
+# 🗂️ Repository Structure
+
+```text
 MedTrack_DV/
-├── code Screenshot/
-├── dashboard/
-├── data/
-├── docs/
+│
+├── 📁 code Screenshot/
+│
+├── 📁 dashboard/
+│   │
+│   ├── 📁 Dashboard Screenshots/
+│   │   ├── Department Analytics Dashboard.png
+│   │   ├── Hospital Overview Dashboard.png
+│   │   ├── Patient Flow Dashboard.png
+│   │   └── Resource Utilization Dashboard.png
+│   │
+│   ├── MedTrack_DV.twb
+│   ├── MedTrack_prototype.twb
+│   └── medtrack_dashboard_v1.twb
+│
+├── 📁 data/
+│   ├── 📁 raw/
+│   └── 📁 cleaned/
+│
+├── 📁 docs/
 │   ├── dashboard_guide.md
 │   ├── dataset_sources.md
 │   ├── healthcare_operations_methodology.md
 │   └── kpi_definitions.md
-├── scripts/
-│   ├── data collection/
-│   ├── generate hospital kpis/
-│   ├── hospital cleaning/
-│   └── outputs/
-└── README.md
+│
+├── 📁 scripts/
+│   ├── 📁 data_collection/
+│   ├── 📁 generate_hospital_kpis/
+│   ├── 📁 hospital_cleaning/
+│   └── 📁 outputs/
+│
+├── 📄 LICENSE
+└── 📄 README.md
+```
 
-## 📚 Documentation
+---
 
-Detailed project documentation is available in the docs directory.
+# 📁 Folder Description
 
-### Dataset Sources
+### 📂 `code Screenshot/`
 
-Contains information about the healthcare datasets used in the project.
+Contains screenshots related to the project implementation and development process.
 
-File:
-docs/dataset_sources.md
+### 📂 `dashboard/`
 
-### KPI Definitions
+Contains dashboard-related resources, Tableau workbook files, and dashboard screenshots.
 
-Contains the definitions and explanations of the healthcare KPIs generated in the project.
+### 📂 `Dashboard Screenshots/`
 
-File:
-docs/kpi_definitions.md
+Contains the four final dashboard visualizations:
 
-### Dashboard Guide
+- `Hospital Overview Dashboard.png`
+- `Department Analytics Dashboard.png`
+- `Patient Flow Dashboard.png`
+- `Resource Utilization Dashboard.png`
 
-Provides guidance for understanding and using the healthcare dashboard.
+### 📂 `data/`
 
-File:
-docs/dashboard_guide.md
+Contains the datasets used throughout the analytics workflow, including raw and cleaned data.
 
-### Healthcare Operations Methodology
+### 📂 `docs/`
 
-Documents the methodology used for healthcare operational analysis.
+Contains supporting project documentation:
 
-File:
-docs/healthcare_operations_methodology.md
+- `dashboard_guide.md`
+- `dataset_sources.md`
+- `healthcare_operations_methodology.md`
+- `kpi_definitions.md`
 
-## 🧹 Data Processing
+### 📂 `scripts/`
 
-The data-processing workflow includes:
+Contains scripts and supporting files for:
 
-1. Collecting hospital-related data.
-2. Preparing the raw dataset.
-3. Cleaning the data using Python.
-4. Processing the cleaned dataset.
-5. Generating healthcare KPIs.
-6. Exporting the processed outputs for dashboard development.
+- Data collection
+- Hospital data cleaning
+- KPI generation
+- Output/report generation
 
-The project contains raw and cleaned healthcare datasets for the data-processing workflow.
+---
 
-## 📈 Dashboard
+# 🛠️ Tools & Technologies
 
-The project includes a healthcare visualization dashboard designed to present important operational insights through interactive visualizations.
+### 📊 Data Analytics
 
-Dashboard functionality includes:
+- Python
+- Pandas
+- Excel
+- CSV
 
-- KPI cards
-- Charts and visualizations
-- Filters
-- Parameters
-- Interactive dashboard actions
-- Healthcare operational analysis
+### 📈 Data Visualization
 
-The dashboard is designed as a portfolio-ready dashboard suite.
+- Tableau
 
-## 🧪 Dashboard Testing
+### 💻 Development
 
-Dashboard testing focuses on:
+- Visual Studio Code
+- Git
+- GitHub
+- Markdown
 
-- Verifying healthcare metrics.
-- Testing dashboard interactions.
-- Validating patient flow analytics.
-- Checking KPI accuracy.
-- Ensuring there are no major dashboard issues.
+---
 
-## 🚀 Project Execution
+# 📌 Key Project Deliverables
 
-### 1. Data Collection
+✅ Healthcare data collection  
+✅ Data cleaning and preparation  
+✅ Hospital KPI engineering  
+✅ Hospital operations analysis  
+✅ Dashboard planning  
+✅ Dashboard prototyping  
+✅ Four analytical dashboards  
+✅ Tableau workbook files  
+✅ Supporting project documentation  
+✅ Structured GitHub repository  
 
-The data collection script is available in:
+---
 
-scripts/data collection/
+# 📈 Dashboard Summary
 
-### 2. Data Cleaning
+### 🏥 Hospital Overview
 
-The hospital data cleaning script is available in:
+Provides an overall perspective of hospital operations and key performance indicators.
 
-scripts/hospital cleaning/
+### 🏢 Department Analytics
 
-### 3. KPI Generation
+Provides a department-level view to support performance analysis and comparison.
 
-The KPI generation workflow is available in:
+### 👥 Patient Flow
 
-scripts/generate hospital kpis/
+Provides insights into patient movement and operational flow.
 
-### 4. Output Files
+### 🛠️ Resource Utilization
 
-Generated KPI outputs are available in:
+Provides visibility into hospital resource usage and utilization.
 
-scripts/outputs/
+---
 
-### 5. Dashboard Development
+# 💡 Project Outcome
 
-The processed healthcare data can be used for dashboard development and visualization in Tableau.
+MedTrack_DV demonstrates an end-to-end healthcare analytics workflow, starting from raw data and progressing through data preparation, KPI engineering, dashboard planning, and visualization.
 
-## 📦 Project Deliverables
+The project brings together:
 
-The final project includes:
+```text
+Healthcare Data
+      ↓
+Data Preparation
+      ↓
+KPI Engineering
+      ↓
+Analytics
+      ↓
+Dashboard Visualization
+      ↓
+Operational Insights
+```
 
-- GitHub Repository
-- Final Documentation
-- Tableau Workbook
-- Healthcare Datasets
-- Data Processing Scripts
-- KPI Outputs
-- Dashboard Documentation
-- Healthcare Operations Methodology
+This structure demonstrates how healthcare operational data can be transformed into meaningful analytical outputs for better understanding of hospital performance.
 
-## 🏆 Evaluation Criteria
+---
 
-| Milestone | Focus Area | Metric | Target |
-|---|---|---|---|
-| 1 | Data Collection & Cleaning | Dataset Completeness | >95% Complete |
-| 2 | KPI Engineering | KPI Accuracy | 6+ KPIs Generated |
-| 3 | Dashboard Development | Dashboard Functionality | 4 Dashboards Integrated |
-| 4 | Documentation & Delivery | Project Quality | Portfolio Ready |
+# 🚀 Future Enhancements
 
-## 📌 Module 8 Status
+Potential future improvements include:
 
-Module 8 focuses on Documentation and Project Delivery.
+- Automated data refresh
+- Additional healthcare KPIs
+- Advanced dashboard interactivity
+- Predictive analytics
+- Patient demand forecasting
+- Department performance benchmarking
+- Automated reporting
+- Real-time operational monitoring
 
-Completed components include:
+---
 
-- Dataset documentation
-- KPI definitions
-- Dashboard guide
-- Healthcare operations methodology
-- Project folder organization
-- Data collection scripts
-- Data cleaning scripts
-- KPI generation scripts
-- KPI output
-- Dashboard components
+# 👨‍💻 Author
 
-## 👨‍💻 Author
+## Madhan Raj G
 
-Madhan Raj G
+**B.E. Mechanical Engineering | Aspiring Data Analyst**
 
-Healthcare Data Analytics & Visualization Project
+### Areas of Interest
 
-## 📄 Project Status
+`Data Analytics` • `Python` • `SQL` • `Excel` • `Power BI` • `Tableau` • `AWS`
 
-MedTrack_DV is prepared for final documentation, GitHub repository delivery, and portfolio presentation.
+---
+
+## ⭐ Project
+
+If you find this project useful or interesting, consider giving the repository a ⭐ star!
