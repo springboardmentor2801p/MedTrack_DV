@@ -1,0 +1,20 @@
+KPI_ID,KPI_Name,Value,Unit
+1,Total Patients,2238.0,Patients
+2,Total Billing,56610270.0,Currency
+3,Bed Occupancy Rate,80.83,%
+4,Average Length of Stay,15.45,Days
+5,Readmission Rate,9.12,%
+6,Discharge Rate,34.14,%
+7,Total Admissions,2238.0,Admissions
+8,Occupied Beds,1809.0,Beds
+9,Severe Cases %,23.95,%
+10,ICU Admissions,339.0,Admissions
+11,Emergency Cases,472.0,Cases
+12,Average Billing per Patient,25295.03,Currency
+13,Total Departments,6.0,Departments
+14,Average Patients per Department,373.0,Patients
+15,Average Billing per Department,9435045.0,Currency
+16,Total Nurses,50.0,Nurses
+17,Available Beds,429.0,Beds
+18,Average Patients per Doctor,1.02,Patients per Doctor
+19,Total Wards,5.0,Wards
