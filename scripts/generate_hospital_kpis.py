@@ -338,6 +338,53 @@ print(
 )
 
 print("\nTotal Columns :", hospital_df.shape[1])
+# ======================================================
+# ADD SUPPORTING KPI COLUMNS TO HOSPITAL DATASET
+# ======================================================
+
+# Total Beds in Hospital
+total_beds = department_df["Total_Beds"].sum()
+
+# Available Bed Days
+available_bed_days = total_beds * 365
+
+# Bed Utilization Rate
+bed_utilization_rate = resource_df["Utilization_Rate"].mean()
+
+# Average Resource Utilization
+avg_resource_utilization = resource_df["Utilization_Rate"].mean() / 100
+
+# Department Efficiency Score
+department_df["Department_Efficiency_Score"] = (
+    department_df["Total_Patients"] /
+    (department_df["Total_Doctors"] + department_df["Total_Nurses"])
+) * avg_resource_utilization
+
+
+
+
+
+# ======================================================
+# ADD SUPPORTING COLUMNS
+# ======================================================
+
+hospital_df["Total_Beds"] = total_beds
+hospital_df["Available_Bed_Days"] = available_bed_days
+hospital_df["Bed_Utilization_Rate"] = bed_utilization_rate
+
+
+
+
+# ======================================================
+# EXPORT FINAL DATASET
+# ======================================================
+
+hospital_df.to_excel(
+    "hospital_final_dataset.xlsx",
+    index=False
+)
+
+print("\nFinal dataset exported successfully.")
 # ============================================
 # EXPORT FINAL DATASET
 # ============================================
