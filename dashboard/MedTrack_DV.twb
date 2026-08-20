@@ -8549,8 +8549,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='141' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='140' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='143' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='142' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone fixed-size='73' h='10437' id='16' is-fixed='true' is-scaled='1' param='C:/Users/HP/Downloads/WhatsApp Image 2026-07-31 at 10.20.58 AM.jpeg' type-v2='bitmap' w='17230' x='424' y='940'>
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
@@ -8953,7 +8953,7 @@
           </zone>
           <zone friendly-name='Dashboard' h='9524' id='14' param='horz' type-v2='layout-flow' w='5335' x='89241' y='952'>
             <zone h='9524' id='17' type-v2='dashboard-object' w='5335' x='89241' y='952'>
-              <button action='tabdoc:goto-sheet window-id=&quot;{1AB09C51-39C0-4723-9F39-D373E3BA0D07}&quot;'>
+              <button action='tabdoc:goto-sheet window-id=&quot;{6037CA18-9B4E-4ACD-AD11-2D186D4413CB}&quot;'>
                 <button-visual-state>
                   <image-path>C:/Users/HP/Downloads/ChatGPT Image Jul 30, 2026, 11_52_20 AM.png</image-path>
                 </button-visual-state>
@@ -9156,8 +9156,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='3100' minheight='3100' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='271' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='270' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='273' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98096' id='272' param='vert' type-v2='layout-flow' w='99148' x='426' y='952'>
                 <zone fixed-size='70' h='9524' id='8' is-fixed='true' is-scaled='1' param='C:/Users/HP/Downloads/WhatsApp Image 2026-08-02 at 1.27.32 PM.jpeg' type-v2='bitmap' w='18086' x='426' y='952'>
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
@@ -9184,7 +9184,7 @@
                   </zone-style>
                 </zone>
                 <zone h='9524' id='17' type-v2='dashboard-object' w='5335' x='89241' y='952'>
-                  <button action='tabdoc:goto-sheet window-id=&quot;{1AB09C51-39C0-4723-9F39-D373E3BA0D07}&quot;'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{6037CA18-9B4E-4ACD-AD11-2D186D4413CB}&quot;'>
                     <button-visual-state>
                       <image-path>C:/Users/HP/Downloads/ChatGPT Image Jul 30, 2026, 11_52_20 AM.png</image-path>
                     </button-visual-state>
@@ -9778,8 +9778,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='3550' minheight='3550' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='208' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98096' id='207' param='vert' type-v2='layout-flow' w='99148' x='426' y='952'>
+            <zone h='100000' id='210' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98096' id='209' param='vert' type-v2='layout-flow' w='99148' x='426' y='952'>
                 <zone fixed-size='79' h='10565' id='8' is-fixed='true' is-scaled='1' param='C:/Users/HP/Downloads/WhatsApp Image 2026-07-31 at 10.20.58 AM.jpeg' type-v2='bitmap' w='16951' x='426' y='952'>
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
@@ -10068,7 +10068,7 @@
                   </zone-style>
                 </zone>
                 <zone fixed-size='210' h='26220' id='162' is-fixed='true' name='Average Stay By Admission Type' w='33707' x='426' y='72826'>
-                  <layout-cache cell-count-h='3' non-cell-size-h='95' type-h='cell' type-w='fixed' />
+                  <layout-cache type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
                     <format attr='border-style' value='solid' />
@@ -10134,8 +10134,8 @@
       </datasource-dependencies>
       <zones>
         <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone friendly-name='Header' h='10563' id='4' param='horz' type-v2='layout-flow' w='4997' x='94577' y='952'>
-            <zone h='10563' id='18' type-v2='dashboard-object' w='4997' x='94577' y='952'>
+          <zone friendly-name='Header' h='10562' id='4' param='horz' type-v2='layout-flow' w='4998' x='94576' y='952'>
+            <zone h='10562' id='18' type-v2='dashboard-object' w='4998' x='94576' y='952'>
               <button action='tabdoc:goto-sheet window-id=&quot;{DFDCE83B-F81A-4BA7-B811-58AFB9926A41}&quot;'>
                 <button-visual-state>
                   <image-path>C:/Users/HP/Downloads/WhatsApp Image 2026-07-31 at 2.40.16 PM.jpeg</image-path>
@@ -10149,8 +10149,8 @@
               </zone-style>
             </zone>
           </zone>
-          <zone friendly-name='Logo' h='10563' id='5' param='horz' type-v2='layout-flow' w='16952' x='426' y='952'>
-            <zone fixed-size='332' h='10563' id='8' is-fixed='true' is-scaled='1' param='C:/Users/HP/Downloads/WhatsApp Image 2026-07-31 at 2.36.15 PM.jpeg' type-v2='bitmap' w='16952' x='426' y='952'>
+          <zone friendly-name='Logo' h='10562' id='5' param='horz' type-v2='layout-flow' w='16951' x='426' y='952'>
+            <zone fixed-size='332' h='10562' id='8' is-fixed='true' is-scaled='1' param='C:/Users/HP/Downloads/WhatsApp Image 2026-07-31 at 2.36.15 PM.jpeg' type-v2='bitmap' w='16951' x='426' y='952'>
               <zone-style>
                 <format attr='border-color' value='#2c3e5a' />
                 <format attr='border-style' value='solid' />
@@ -10161,8 +10161,8 @@
               </zone-style>
             </zone>
           </zone>
-          <zone friendly-name='Date' h='10563' id='9' param='horz' type-v2='layout-flow' w='16753' x='17378' y='952'>
-            <zone fixed-size='223' h='10325' id='69' is-fixed='true' mode='slider' name='Monthly Patient Admission Trend' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[mn:Date of Admission:ok]' type-v2='filter' values='database' w='16647' x='17431' y='1071'>
+          <zone friendly-name='Date' h='10562' id='9' param='horz' type-v2='layout-flow' w='16753' x='17377' y='952'>
+            <zone fixed-size='223' h='10324' id='69' is-fixed='true' mode='slider' name='Monthly Patient Admission Trend' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[mn:Date of Admission:ok]' type-v2='filter' values='database' w='16647' x='17430' y='1071'>
               <zone-style>
                 <format attr='border-color' value='#2c3e5a' />
                 <format attr='border-style' value='solid' />
@@ -10178,8 +10178,8 @@
               <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='10' />
             </zone-style>
           </zone>
-          <zone friendly-name='Home' h='10563' id='13' param='horz' type-v2='layout-flow' w='5195' x='84047' y='952'>
-            <zone fixed-size='91' h='10563' id='16' is-fixed='true' type-v2='dashboard-object' w='5195' x='84047' y='952'>
+          <zone friendly-name='Home' h='10562' id='13' param='horz' type-v2='layout-flow' w='5195' x='84046' y='952'>
+            <zone fixed-size='91' h='10562' id='16' is-fixed='true' type-v2='dashboard-object' w='5195' x='84046' y='952'>
               <button action='tabdoc:goto-sheet window-id=&quot;{B5F03039-227F-4587-A937-ABE5653BD337}&quot;'>
                 <button-visual-state>
                   <image-path>C:/Users/HP/Downloads/ChatGPT Image Jul 30, 2026, 11_41_17 AM.png</image-path>
@@ -10193,9 +10193,9 @@
               </zone-style>
             </zone>
           </zone>
-          <zone friendly-name='Dashboard' h='10563' id='14' param='horz' type-v2='layout-flow' w='5335' x='89242' y='952'>
-            <zone h='10563' id='17' type-v2='dashboard-object' w='5335' x='89242' y='952'>
-              <button action='tabdoc:goto-sheet window-id=&quot;{7B8209F8-A758-49E5-AF21-25FAFA1954BE}&quot;'>
+          <zone friendly-name='Dashboard' h='10562' id='14' param='horz' type-v2='layout-flow' w='5335' x='89241' y='952'>
+            <zone h='10562' id='17' type-v2='dashboard-object' w='5335' x='89241' y='952'>
+              <button action='tabdoc:goto-sheet window-id=&quot;{220A988B-0CF8-4071-97E9-D2E1CAC5F374}&quot;'>
                 <button-visual-state>
                   <image-path>C:/Users/HP/Downloads/ChatGPT Image Jul 30, 2026, 11_52_20 AM.png</image-path>
                 </button-visual-state>
@@ -10208,8 +10208,8 @@
               </zone-style>
             </zone>
           </zone>
-          <zone friendly-name='KPI 2' h='10956' id='21' param='vert' type-v2='layout-flow' w='16753' x='17378' y='11515'>
-            <zone h='10956' id='93' name='Occupied Beds' show-title='false' w='16753' x='17378' y='11515'>
+          <zone friendly-name='KPI 2' h='10956' id='21' param='vert' type-v2='layout-flow' w='16753' x='17377' y='11514'>
+            <zone h='10956' id='93' name='Occupied Beds' show-title='false' w='16753' x='17377' y='11514'>
               <layout-cache cell-count-h='1' type-h='cell' type-w='fixed' />
               <zone-style>
                 <format attr='border-color' value='#2c3e5a' />
@@ -10220,8 +10220,8 @@
               </zone-style>
             </zone>
           </zone>
-          <zone friendly-name='KPI 3' h='10956' id='22' param='vert' type-v2='layout-flow' w='15869' x='34131' y='11515'>
-            <zone h='10956' id='105' name='KPI - Severe Cases' show-title='false' w='15869' x='34131' y='11515'>
+          <zone friendly-name='KPI 3' h='10956' id='22' param='vert' type-v2='layout-flow' w='15870' x='34130' y='11514'>
+            <zone h='10956' id='105' name='KPI - Severe Cases' show-title='false' w='15870' x='34130' y='11514'>
               <layout-cache cell-count-h='1' type-h='cell' type-w='fixed' />
               <zone-style>
                 <format attr='border-color' value='#2c3e5a' />
@@ -10232,8 +10232,8 @@
               </zone-style>
             </zone>
           </zone>
-          <zone friendly-name='KPI 4' h='10956' id='23' param='vert' type-v2='layout-flow' w='16679' x='50000' y='11515'>
-            <zone h='10956' id='164' name='KPI - ICU Admissions' show-title='false' w='16679' x='50000' y='11515'>
+          <zone friendly-name='KPI 4' h='10956' id='23' param='vert' type-v2='layout-flow' w='16678' x='50000' y='11514'>
+            <zone h='10956' id='164' name='KPI - ICU Admissions' show-title='false' w='16678' x='50000' y='11514'>
               <layout-cache cell-count-h='1' type-h='cell' type-w='fixed' />
               <zone-style>
                 <format attr='border-color' value='#2c3e5a' />
@@ -10244,8 +10244,8 @@
               </zone-style>
             </zone>
           </zone>
-          <zone friendly-name='KPI 5' h='10956' id='24' param='vert' type-v2='layout-flow' w='17368' x='66679' y='11515'>
-            <zone h='10956' id='165' name='KPI - Emergency Cases' show-title='false' w='17368' x='66679' y='11515'>
+          <zone friendly-name='KPI 5' h='10956' id='24' param='vert' type-v2='layout-flow' w='17368' x='66678' y='11514'>
+            <zone h='10956' id='165' name='KPI - Emergency Cases' show-title='false' w='17368' x='66678' y='11514'>
               <layout-cache cell-count-h='1' type-h='cell' type-w='fixed' />
               <zone-style>
                 <format attr='border-color' value='#2c3e5a' />
@@ -10256,9 +10256,9 @@
               </zone-style>
             </zone>
           </zone>
-          <zone friendly-name='Chart Row 1' h='24915' id='26' param='horz' type-v2='layout-flow' w='32895' x='66679' y='22471'>
-            <zone friendly-name='Charts 3' h='24915' id='29' param='vert' type-v2='layout-flow' w='32895' x='66679' y='22471'>
-              <zone h='24915' id='95' name='Readmission Rate by Department' w='32895' x='66679' y='22471'>
+          <zone friendly-name='Chart Row 1' h='24915' id='26' param='horz' type-v2='layout-flow' w='32896' x='66678' y='22470'>
+            <zone friendly-name='Charts 3' h='24915' id='29' param='vert' type-v2='layout-flow' w='32896' x='66678' y='22470'>
+              <zone h='24915' id='95' name='Readmission Rate by Department' w='32896' x='66678' y='22470'>
                 <layout-cache minheight='180' type-h='scalable' type-w='cell' />
                 <zone-style>
                   <format attr='border-color' value='#2c3e5a' />
@@ -10270,8 +10270,8 @@
               </zone>
             </zone>
           </zone>
-          <zone friendly-name='Charts 1' h='24915' id='27' param='horz' type-v2='layout-flow' w='33705' x='426' y='22471'>
-            <zone h='24915' id='55' name='Monthly Patient Admission Trend' w='33705' x='426' y='22471'>
+          <zone friendly-name='Charts 1' h='24915' id='27' param='horz' type-v2='layout-flow' w='33704' x='426' y='22470'>
+            <zone h='24915' id='55' name='Monthly Patient Admission Trend' w='33704' x='426' y='22470'>
               <layout-cache cell-count-w='12' minheight='180' type-h='scalable' type-w='cell' />
               <zone-style>
                 <format attr='border-color' value='#2c3e5a' />
@@ -10282,8 +10282,8 @@
               </zone-style>
             </zone>
           </zone>
-          <zone friendly-name='Charts 2' h='24915' id='28' param='vert' type-v2='layout-flow' w='32548' x='34131' y='22471'>
-            <zone h='24914' id='94' name='Length of Stay Distribution' w='32548' x='34131' y='22471'>
+          <zone friendly-name='Charts 2' h='24915' id='28' param='vert' type-v2='layout-flow' w='32548' x='34130' y='22470'>
+            <zone h='24914' id='94' name='Length of Stay Distribution' w='32548' x='34130' y='22470'>
               <layout-cache cell-count-h='5' non-cell-size-h='101' type-h='cell' type-w='fixed' />
               <zone-style>
                 <format attr='border-color' value='#2c3e5a' />
@@ -10294,8 +10294,8 @@
               </zone-style>
             </zone>
           </zone>
-          <zone friendly-name='Chart Row 2' h='25438' id='30' param='vert' type-v2='layout-flow' w='32895' x='66679' y='47386'>
-            <zone h='25438' id='100' name='Patient Discharge Status' w='32895' x='66679' y='47386'>
+          <zone friendly-name='Chart Row 2' h='25438' id='30' param='vert' type-v2='layout-flow' w='32896' x='66678' y='47385'>
+            <zone h='25438' id='100' name='Patient Discharge Status' w='32896' x='66678' y='47385'>
               <layout-cache minheight='178' type-h='scalable' type-w='fixed' />
               <zone-style>
                 <format attr='border-color' value='#2c3e5a' />
@@ -10306,8 +10306,8 @@
               </zone-style>
             </zone>
           </zone>
-          <zone friendly-name='Charts 1' h='25438' id='31' param='horz' type-v2='layout-flow' w='33705' x='426' y='47386'>
-            <zone h='25438' id='96' name='Severity Distribution' w='24662' x='426' y='47386'>
+          <zone friendly-name='Charts 1' h='25438' id='31' param='horz' type-v2='layout-flow' w='33704' x='426' y='47385'>
+            <zone h='25438' id='96' name='Severity Distribution' w='24661' x='426' y='47385'>
               <layout-cache cell-count-h='1' cell-count-w='1' non-cell-size-h='33' type-h='cell' type-w='cell' />
               <zone-style>
                 <format attr='border-color' value='#2c3e5a' />
@@ -10317,7 +10317,7 @@
                 <format attr='margin' value='4' />
               </zone-style>
             </zone>
-            <zone h='25438' id='127' name='Severity Distribution' pane-specification-id='0' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[none:Severity:nk]' type-v2='color' w='9043' x='25088' y='47386'>
+            <zone h='25438' id='127' name='Severity Distribution' pane-specification-id='0' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[none:Severity:nk]' type-v2='color' w='9043' x='25087' y='47385'>
               <zone-style>
                 <format attr='border-color' value='#2c3e5a' />
                 <format attr='border-style' value='solid' />
@@ -10327,8 +10327,8 @@
               </zone-style>
             </zone>
           </zone>
-          <zone friendly-name='Charts 2' h='25438' id='32' param='vert' type-v2='layout-flow' w='32548' x='34131' y='47386'>
-            <zone h='25438' id='181' name='Patient Gender Distribution' w='32548' x='34131' y='47386'>
+          <zone friendly-name='Charts 2' h='25438' id='32' param='vert' type-v2='layout-flow' w='32548' x='34130' y='47385'>
+            <zone h='25438' id='181' name='Patient Gender Distribution' w='32548' x='34130' y='47385'>
               <layout-cache cell-count-h='1' non-cell-size-h='38' type-h='cell' type-w='fixed' />
               <zone-style>
                 <format attr='border-color' value='#2c3e5a' />
@@ -10339,8 +10339,8 @@
               </zone-style>
             </zone>
           </zone>
-          <zone friendly-name='Charts Row 3' h='26224' id='34' param='vert' type-v2='layout-flow' w='32895' x='66679' y='72824'>
-            <zone h='26224' id='113' name='Bed Occupancy Status' w='32895' x='66679' y='72824'>
+          <zone friendly-name='Charts Row 3' h='26225' id='34' param='vert' type-v2='layout-flow' w='32896' x='66678' y='72823'>
+            <zone h='26225' id='113' name='Bed Occupancy Status' w='32896' x='66678' y='72823'>
               <layout-cache cell-count-h='1' non-cell-size-h='38' type-h='cell' type-w='fixed' />
               <zone-style>
                 <format attr='border-color' value='#2c3e5a' />
@@ -10351,8 +10351,8 @@
               </zone-style>
             </zone>
           </zone>
-          <zone friendly-name='Charts 1' h='26224' id='35' param='vert' type-v2='layout-flow' w='33705' x='426' y='72824'>
-            <zone h='26224' id='184' name='Blood Type Distribution' w='33705' x='426' y='72824'>
+          <zone friendly-name='Charts 1' h='26225' id='35' param='vert' type-v2='layout-flow' w='33704' x='426' y='72823'>
+            <zone h='26225' id='184' name='Blood Type Distribution' w='33704' x='426' y='72823'>
               <layout-cache minheight='185' type-h='scalable' type-w='fixed' />
               <zone-style>
                 <format attr='border-color' value='#2c3e5a' />
@@ -10363,8 +10363,8 @@
               </zone-style>
             </zone>
           </zone>
-          <zone friendly-name='Charts 2' h='26224' id='36' param='vert' type-v2='layout-flow' w='32548' x='34131' y='72824'>
-            <zone h='26224' id='177' name='Patient Age Group Distribution' w='32548' x='34131' y='72824'>
+          <zone friendly-name='Charts 2' h='26225' id='36' param='vert' type-v2='layout-flow' w='32548' x='34130' y='72823'>
+            <zone h='26225' id='177' name='Patient Age Group Distribution' w='32548' x='34130' y='72823'>
               <layout-cache minheight='185' type-h='scalable' type-w='fixed' />
               <zone-style>
                 <format attr='border-color' value='#2c3e5a' />
@@ -10375,7 +10375,7 @@
               </zone-style>
             </zone>
           </zone>
-          <zone h='10956' id='92' name='KPI - Total Admissions' show-title='false' w='16952' x='426' y='11515'>
+          <zone h='10956' id='92' name='KPI - Total Admissions' show-title='false' w='16951' x='426' y='11514'>
             <zone-style>
               <format attr='border-color' value='#2c3e5a' />
               <format attr='border-style' value='solid' />
@@ -10384,7 +10384,7 @@
               <format attr='margin' value='4' />
             </zone-style>
           </zone>
-          <zone h='10563' id='102' mode='dropdown' name='Readmission Rate by Department' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[none:Discharge_Status:nk]' type-v2='filter' values='database' w='17368' x='66679' y='952'>
+          <zone h='10562' id='102' mode='dropdown' name='Readmission Rate by Department' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[none:Discharge_Status:nk]' type-v2='filter' values='database' w='17368' x='66678' y='952'>
             <zone-style>
               <format attr='border-color' value='#2c3e5a' />
               <format attr='border-style' value='solid' />
@@ -10393,7 +10393,7 @@
               <format attr='margin' value='4' />
             </zone-style>
           </zone>
-          <zone h='10563' id='108' mode='slider' name='Severity Distribution' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[none:Severity:nk]' type-v2='filter' values='database' w='16679' x='50000' y='952'>
+          <zone h='10562' id='108' mode='slider' name='Severity Distribution' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[none:Severity:nk]' type-v2='filter' values='database' w='16678' x='50000' y='952'>
             <zone-style>
               <format attr='border-color' value='#2c3e5a' />
               <format attr='border-style' value='solid' />
@@ -10402,7 +10402,7 @@
               <format attr='margin' value='4' />
             </zone-style>
           </zone>
-          <zone h='10956' id='168' name='KPI - Average Billing per Patient' show-title='false' w='15527' x='84047' y='11515'>
+          <zone h='10956' id='168' name='KPI - Average Billing per Patient' show-title='false' w='15528' x='84046' y='11514'>
             <zone-style>
               <format attr='border-color' value='#2c3e5a' />
               <format attr='border-style' value='solid' />
@@ -10411,7 +10411,7 @@
               <format attr='margin' value='4' />
             </zone-style>
           </zone>
-          <zone h='10563' id='178' mode='slider' name='Patient Age Group Distribution' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[none:Calculation_1424446711779329:nk]' type-v2='filter' values='database' w='15869' x='34131' y='952'>
+          <zone h='10562' id='178' mode='slider' name='Patient Age Group Distribution' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[none:Calculation_1424446711779329:nk]' type-v2='filter' values='database' w='15870' x='34130' y='952'>
             <zone-style>
               <format attr='border-color' value='#000000' />
               <format attr='border-style' value='none' />
@@ -10437,9 +10437,9 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='3450' minheight='3450' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='232' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='231' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
-                <zone fixed-size='79' h='10563' id='8' is-fixed='true' is-scaled='1' param='C:/Users/HP/Downloads/WhatsApp Image 2026-07-31 at 2.36.15 PM.jpeg' type-v2='bitmap' w='16952' x='426' y='952'>
+            <zone h='100000' id='234' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98096' id='233' param='vert' type-v2='layout-flow' w='99148' x='426' y='952'>
+                <zone fixed-size='79' h='10562' id='8' is-fixed='true' is-scaled='1' param='C:/Users/HP/Downloads/WhatsApp Image 2026-07-31 at 2.36.15 PM.jpeg' type-v2='bitmap' w='16951' x='426' y='952'>
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
                     <format attr='border-style' value='solid' />
@@ -10450,7 +10450,7 @@
                     <format attr='background-color' value='#111827' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='91' h='10563' id='16' type-v2='dashboard-object' w='5195' x='84047' y='952'>
+                <zone fixed-size='91' h='10562' id='16' type-v2='dashboard-object' w='5195' x='84046' y='952'>
                   <button action='tabdoc:goto-sheet window-id=&quot;{B5F03039-227F-4587-A937-ABE5653BD337}&quot;'>
                     <button-visual-state>
                       <image-path>C:/Users/HP/Downloads/ChatGPT Image Jul 30, 2026, 11_41_17 AM.png</image-path>
@@ -10464,8 +10464,8 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='10563' id='17' type-v2='dashboard-object' w='5335' x='89242' y='952'>
-                  <button action='tabdoc:goto-sheet window-id=&quot;{7B8209F8-A758-49E5-AF21-25FAFA1954BE}&quot;'>
+                <zone h='10562' id='17' type-v2='dashboard-object' w='5335' x='89241' y='952'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{220A988B-0CF8-4071-97E9-D2E1CAC5F374}&quot;'>
                     <button-visual-state>
                       <image-path>C:/Users/HP/Downloads/ChatGPT Image Jul 30, 2026, 11_52_20 AM.png</image-path>
                     </button-visual-state>
@@ -10478,7 +10478,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='10563' id='18' type-v2='dashboard-object' w='4997' x='94577' y='952'>
+                <zone h='10562' id='18' type-v2='dashboard-object' w='4998' x='94576' y='952'>
                   <button action='tabdoc:goto-sheet window-id=&quot;{DFDCE83B-F81A-4BA7-B811-58AFB9926A41}&quot;'>
                     <button-visual-state>
                       <image-path>C:/Users/HP/Downloads/WhatsApp Image 2026-07-31 at 2.40.16 PM.jpeg</image-path>
@@ -10492,7 +10492,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='82' h='10956' id='92' is-fixed='true' name='KPI - Total Admissions' show-title='false' w='16952' x='426' y='11515'>
+                <zone fixed-size='82' h='10956' id='92' is-fixed='true' name='KPI - Total Admissions' show-title='false' w='16951' x='426' y='11514'>
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
                     <format attr='border-style' value='solid' />
@@ -10502,7 +10502,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='82' h='10956' id='93' is-fixed='true' name='Occupied Beds' show-title='false' w='16753' x='17378' y='11515'>
+                <zone fixed-size='82' h='10956' id='93' is-fixed='true' name='Occupied Beds' show-title='false' w='16753' x='17377' y='11514'>
                   <layout-cache cell-count-h='1' type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
@@ -10513,7 +10513,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='82' h='10956' id='105' is-fixed='true' name='KPI - Severe Cases' show-title='false' w='15869' x='34131' y='11515'>
+                <zone fixed-size='82' h='10956' id='105' is-fixed='true' name='KPI - Severe Cases' show-title='false' w='15870' x='34130' y='11514'>
                   <layout-cache cell-count-h='1' type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
@@ -10524,7 +10524,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='82' h='10956' id='164' is-fixed='true' name='KPI - ICU Admissions' show-title='false' w='16679' x='50000' y='11515'>
+                <zone fixed-size='82' h='10956' id='164' is-fixed='true' name='KPI - ICU Admissions' show-title='false' w='16678' x='50000' y='11514'>
                   <layout-cache cell-count-h='1' type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
@@ -10535,7 +10535,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='82' h='10956' id='165' is-fixed='true' name='KPI - Emergency Cases' show-title='false' w='17368' x='66679' y='11515'>
+                <zone fixed-size='82' h='10956' id='165' is-fixed='true' name='KPI - Emergency Cases' show-title='false' w='17368' x='66678' y='11514'>
                   <layout-cache cell-count-h='1' type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
@@ -10546,7 +10546,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='82' h='10956' id='168' is-fixed='true' name='KPI - Average Billing per Patient' show-title='false' w='15527' x='84047' y='11515'>
+                <zone fixed-size='82' h='10956' id='168' is-fixed='true' name='KPI - Average Billing per Patient' show-title='false' w='15528' x='84046' y='11514'>
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
                     <format attr='border-style' value='solid' />
@@ -10601,7 +10601,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='223' h='10325' id='69' mode='slider' name='Monthly Patient Admission Trend' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[mn:Date of Admission:ok]' type-v2='filter' values='database' w='16647' x='17431' y='1071'>
+                <zone fixed-size='223' h='10324' id='69' mode='slider' name='Monthly Patient Admission Trend' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[mn:Date of Admission:ok]' type-v2='filter' values='database' w='16647' x='17430' y='1071'>
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
                     <format attr='border-style' value='solid' />
@@ -10611,7 +10611,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='199' h='24915' id='55' is-fixed='true' name='Monthly Patient Admission Trend' w='33705' x='426' y='22471'>
+                <zone fixed-size='199' h='24915' id='55' is-fixed='true' name='Monthly Patient Admission Trend' w='33704' x='426' y='22470'>
                   <layout-cache cell-count-w='12' minheight='180' type-h='scalable' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
@@ -10622,7 +10622,7 @@
                     <format attr='background-color' value='#111827' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='199' h='24914' id='94' is-fixed='true' name='Length of Stay Distribution' w='32548' x='34131' y='22471'>
+                <zone fixed-size='199' h='24914' id='94' is-fixed='true' name='Length of Stay Distribution' w='32548' x='34130' y='22470'>
                   <layout-cache cell-count-h='5' non-cell-size-h='101' type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
@@ -10633,7 +10633,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='10563' id='102' mode='dropdown' name='Readmission Rate by Department' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[none:Discharge_Status:nk]' type-v2='filter' values='database' w='17368' x='66679' y='952'>
+                <zone h='10562' id='102' mode='dropdown' name='Readmission Rate by Department' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[none:Discharge_Status:nk]' type-v2='filter' values='database' w='17368' x='66678' y='952'>
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
                     <format attr='border-style' value='solid' />
@@ -10643,7 +10643,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='199' h='24915' id='95' is-fixed='true' name='Readmission Rate by Department' w='32895' x='66679' y='22471'>
+                <zone fixed-size='199' h='24915' id='95' is-fixed='true' name='Readmission Rate by Department' w='32896' x='66678' y='22470'>
                   <layout-cache minheight='180' type-h='scalable' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
@@ -10654,7 +10654,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='10563' id='108' mode='slider' name='Severity Distribution' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[none:Severity:nk]' type-v2='filter' values='database' w='16679' x='50000' y='952'>
+                <zone h='10562' id='108' mode='slider' name='Severity Distribution' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[none:Severity:nk]' type-v2='filter' values='database' w='16678' x='50000' y='952'>
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
                     <format attr='border-style' value='solid' />
@@ -10664,7 +10664,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='204' h='25438' id='96' is-fixed='true' name='Severity Distribution' w='24662' x='426' y='47386'>
+                <zone fixed-size='204' h='25438' id='96' is-fixed='true' name='Severity Distribution' w='24661' x='426' y='47385'>
                   <layout-cache cell-count-h='1' cell-count-w='1' non-cell-size-h='33' type-h='cell' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
@@ -10675,7 +10675,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='25438' id='127' name='Severity Distribution' pane-specification-id='0' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[none:Severity:nk]' type-v2='color' w='9043' x='25088' y='47386'>
+                <zone h='25438' id='127' name='Severity Distribution' pane-specification-id='0' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[none:Severity:nk]' type-v2='color' w='9043' x='25087' y='47385'>
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
                     <format attr='border-style' value='solid' />
@@ -10685,7 +10685,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='204' h='25438' id='181' is-fixed='true' name='Patient Gender Distribution' w='32548' x='34131' y='47386'>
+                <zone fixed-size='204' h='25438' id='181' is-fixed='true' name='Patient Gender Distribution' w='32548' x='34130' y='47385'>
                   <layout-cache cell-count-h='1' non-cell-size-h='38' type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
@@ -10696,7 +10696,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='204' h='25438' id='100' is-fixed='true' name='Patient Discharge Status' w='32895' x='66679' y='47386'>
+                <zone fixed-size='204' h='25438' id='100' is-fixed='true' name='Patient Discharge Status' w='32896' x='66678' y='47385'>
                   <layout-cache minheight='178' type-h='scalable' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
@@ -10707,7 +10707,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='210' h='26224' id='184' is-fixed='true' name='Blood Type Distribution' w='33705' x='426' y='72824'>
+                <zone fixed-size='210' h='26225' id='184' is-fixed='true' name='Blood Type Distribution' w='33704' x='426' y='72823'>
                   <layout-cache minheight='185' type-h='scalable' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
@@ -10718,7 +10718,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='10563' id='178' mode='slider' name='Patient Age Group Distribution' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[none:Calculation_1424446711779329:nk]' type-v2='filter' values='database' w='15869' x='34131' y='952'>
+                <zone h='10562' id='178' mode='slider' name='Patient Age Group Distribution' param='[federated.06c05xu0c3ypnx1bi96il11g2ub3].[none:Calculation_1424446711779329:nk]' type-v2='filter' values='database' w='15870' x='34130' y='952'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -10727,7 +10727,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='210' h='26224' id='177' is-fixed='true' name='Patient Age Group Distribution' w='32548' x='34131' y='72824'>
+                <zone fixed-size='210' h='26225' id='177' is-fixed='true' name='Patient Age Group Distribution' w='32548' x='34130' y='72823'>
                   <layout-cache minheight='185' type-h='scalable' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
@@ -10738,7 +10738,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='210' h='26224' id='113' is-fixed='true' name='Bed Occupancy Status' w='32895' x='66679' y='72824'>
+                <zone fixed-size='210' h='26225' id='113' is-fixed='true' name='Bed Occupancy Status' w='32896' x='66678' y='72823'>
                   <layout-cache cell-count-h='1' non-cell-size-h='38' type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
@@ -11048,8 +11048,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='3250' minheight='3250' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='236' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='235' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='238' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98096' id='237' param='vert' type-v2='layout-flow' w='99148' x='426' y='952'>
                 <zone fixed-size='79' h='10563' id='8' is-fixed='true' is-scaled='1' param='C:/Users/HP/Downloads/WhatsApp Image 2026-08-02 at 1.26.16 PM.jpeg' type-v2='bitmap' w='16948' x='426' y='952'>
                   <zone-style>
                     <format attr='border-color' value='#2c3e5a' />
@@ -11453,7 +11453,7 @@
           </highlight>
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='17' />
       <simple-id uuid='{00A2485B-BB1F-40FC-94A5-D75D568C5EFD}' />
     </window>
     <window class='dashboard' name='Department Analytics Dashboard'>
@@ -11500,7 +11500,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='17' />
       <simple-id uuid='{220A988B-0CF8-4071-97E9-D2E1CAC5F374}' />
     </window>
     <window class='dashboard' name='Resource Utilization Dashboard'>
