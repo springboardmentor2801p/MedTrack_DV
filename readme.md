@@ -113,19 +113,6 @@ A separate **Dashboard Testing Report** covers KPI calculation validation, dashb
 - [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (free) to open and explore the `.pbix` file
 - Python 3.x with `pandas` and `numpy` if you want to re-run the data pipeline
 
-**Steps**
-1. Clone the repository
-   ```bash
-   git clone https://github.com/jettisrineshreddy-cpu/MedTrack_DV.git
-   ```
-2. Open `Hospital_Management_Analytics.pbix` in Power BI Desktop to explore the dashboards directly, **or**
-3. Re-run the pipeline from source:
-   ```bash
-   python 00_Data_Collection.ipynb      # data collection
-   python generate_hospital_kpis.py     # KPI generation from hospital_cleaned_data.xlsx
-   ```
-4. Refresh the data source in Power BI to point at your generated `hospital_final_dataset.xlsx`
-
 ## Data Source
 
 14 of the 16 source tables come from the open-source [Hospital Management System dataset](https://www.kaggle.com/datasets/mshamoonbutt/hospital-management-system/data?select=Hospital+Management+System.xlsx) on Kaggle. The remaining 2 — `equipment` and `equipment_usage` — are synthetically generated to support the Resource Utilization dashboard's equipment tracking metrics.
